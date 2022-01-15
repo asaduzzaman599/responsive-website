@@ -80,7 +80,7 @@ main {
 }
 
 #toggle-button {
-    /* display: none; */
+    display: none;
 }
 
 .toggle-button-icon {
