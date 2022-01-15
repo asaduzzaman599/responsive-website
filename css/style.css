@@ -66,7 +66,6 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 
@@ -78,6 +77,14 @@ main {
     margin-top: 95px;
     justify-content: space-between;
     align-items: center;
+}
+
+#toggle-button {
+    /* display: none; */
+}
+
+.toggle-button-icon {
+    display: none;
 }
 
 .navbar .nav-title h3 {
@@ -97,15 +104,18 @@ main {
     margin-right: 34px;
 }
 
-.navbar ul li:last-child {
-    margin-right: 0;
-}
 
-.navbar ul li a {
+.navbar ul li a,
+.menu a,
+.toggle-button-icon {
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
     color: var(--common-text-color);
+}
+
+.menu {
+    display: flex;
 }
 
 /* banner-section */
@@ -120,7 +130,7 @@ main {
     flex: 1;
 }
 
-.banner-content h1 {
+.banner-heading {
 
     font-family: Poppins;
     font-weight: bold;
@@ -129,7 +139,7 @@ main {
     padding: 8px 0;
 }
 
-.banner-content p {
+.banner-paragraph {
 
     padding: 8px 0;
     font-family: Poppins;
@@ -141,11 +151,6 @@ main {
 
 }
 
-.banner-section:hover .banner-img img {
-    transform: scale(1.2);
-    transition: transform 1s;
-
-}
 
 .banner-button {
     color: #FFFFFF;
@@ -172,6 +177,7 @@ main {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .banner-img img {
@@ -182,11 +188,41 @@ main {
     transition: transform 1s;
 }
 
+.banner-section:hover .banner-img img {
+
+    animation: banner-animation 3s ease-in-out 0s infinite forwards;
+
+}
+
+@keyframes banner-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
 /* ecommerce site section  */
 .ecommerce-sites-section {
     width: 1110px;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     padding: 40px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -332,8 +368,8 @@ main {
 }
 
 .subscribe-form .subscribe-form form {
-    display: flex;
     width: 80%;
+    display: flex;
 
 }
 

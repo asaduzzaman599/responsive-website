@@ -1,0 +1,135 @@
+/* mobile  */
+@media only screen and (max-width:688px) {
+
+    .header-part {
+        height: fit-content;
+    }
+
+    .navbar {
+        width: 95%;
+        margin-top: 20px;
+
+    }
+
+    .toggle-button-icon {
+        display: block;
+    }
+
+    #toggle-button:checked~.menu .navigation {
+
+        transform: translateY(100px);
+        top: 0;
+    }
+
+    .menu .navigation {
+        transform: translateY(-240px);
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        transition: 1s linear;
+    }
+
+    .menu .navigation li {
+        padding: 10px;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    .banner-section {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .banner-content {
+        text-align: center;
+        order: 2;
+    }
+
+    .banner-heading {
+        font-size: 28px;
+    }
+
+    .banner-paragraph {
+        font-size: 14px;
+    }
+
+    .banner-img {
+        height: 257px;
+        width: 100%;
+    }
+
+    .ecommerce-sites-section {
+        width: 90%;
+        gap: 30px;
+        border: none;
+
+    }
+
+    .ecommerce-site img {
+
+        width: 38px;
+        border: none;
+
+    }
+
+    .collections-section {
+        width: 95%;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-form {
+        width: 95%;
+        padding: 50px 15px;
+    }
+
+
+    .subscribe-form input[type=button] {
+        margin-top: 20px;
+    }
+}
+
+/* for tab  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .banner-section {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        order: 2;
+    }
+
+    .banner-img {
+        width: 90%;
+    }
+
+    .ecommerce-sites-section {
+        width: 90%;
+    }
+
+    .collections-section {
+        width: 95%;
+    }
+
+    .collections {
+
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
