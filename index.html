@@ -20,7 +20,7 @@
 
 <body>
     <!-- Header Start  -->
-    <header class="header-part">
+    <header id="home" class="header-part">
         
     <!-- Nav Start  -->
         <nav class="navbar">
@@ -31,8 +31,8 @@
             </div>
             <div class="menu">
                 <ul class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
                     <li><a href="#">Sign up</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
@@ -53,7 +53,7 @@
                     Influencer
                 </h1>
                 <p class="banner-paragraph">
-                    For best product for best dill we are here. we believe in work not in talk. Your believe our motivation.
+                    For best product and for best dill we are here. we believe in work not in spech. Your believe our motivation.
                 </p>
                 <a class="banner-button common-btn" href="">Preebook now <span><i class="fas fa-arrow-right"></i></span></a>
                 
@@ -96,7 +96,7 @@
         </section>
 
         <!-- collection section  -->
-        <section class="collections-section">
+        <section id="products" class="collections-section">
             <h2 class="collections-title">Popular Collection</h2>
             <div class="collections">
                 <div class="collection">
@@ -110,7 +110,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <span> 4.5</span>
+                            <span> 5.0</span>
                         </div>
                         
                         <p class="collection-description">Wordwide shifting </p>
@@ -130,7 +130,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <span> 4.99</span>
+                            <span> 5.0</span>
                         </div>
                         <p class="collection-description">Wordwide shifting </p>
                         <p class="collection-description">available</p>
@@ -150,7 +150,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star last"></i>
-                            <span> 4.99</span>
+                            <span> 4.0</span>
                         </div>
                         <p class="collection-description">Wordwide shifting </p>
                         <p class="collection-description">available</p>
@@ -169,7 +169,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <span> 4.5</span>
+                            <span> 5.0</span>
                         </div>
                         
                         <p class="collection-description">Wordwide shifting </p>
@@ -187,9 +187,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span> 4.99</span>
+                            <i class="fas fa-star last"></i>
+                            <i class="fas fa-star last"></i>
+                            <span> 3.0</span>
                         </div>
                         <p class="collection-description">Wordwide shifting </p>
                         <p class="collection-description">available</p>
@@ -209,7 +209,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star last"></i>
-                            <span> 4.99</span>
+                            <span> 5.0</span>
                         </div>
                         <p class="collection-description">Wordwide shifting </p>
                         <p class="collection-description">available</p>
@@ -228,7 +228,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <span> 4.5</span>
+                            <span> 5.0</span>
                         </div>
                         
                         <p class="collection-description">Wordwide shifting </p>
@@ -246,9 +246,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span> 4.99</span>
+                            <i class="fas fa-star last"></i>
+                            <i class="fas fa-star last"></i>
+                            <span> 3.0</span>
                         </div>
                         <p class="collection-description">Wordwide shifting </p>
                         <p class="collection-description">available</p>
@@ -268,7 +268,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star last"></i>
-                            <span> 4.99</span>
+                            <span> 4.0</span>
                         </div>
                         
                         <p class="collection-description">Wordwide shifting </p>
@@ -287,11 +287,11 @@
 
         <section class="sub-section container">
             
-            <div class="subscribe-form" action="">
-                <h2 class="subscribe-title">Let's Stey in Touch!</h2>
+            <div class="subscribe">
+                <h2 class="subscribe-title">Let's Stay in Touch!</h2>
                 <p class="subscribe-text">Subscribe us to get update about our new collections.</p>
-                <form action="">
-                <input type="text" placeholder="Your Email Address">
+                <form class="subscribe-form" action="">
+                <input type="text" placeholder="Your Email Address" required>
                 <input type="button" class="" value="Subscribe">
             </form>
             </div>
@@ -306,10 +306,10 @@
         <p class="footer-text">Copyright &#169;
             2020  influencer products <br>All rights reserved</p>
         <ul>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href=""><i class="fas fa-basketball-ball"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://twitter.com/ "  target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://youtube.com/ "  target="_blank"><i class="fab fa-youtube"></i></a></li>
         </ul>
 
     </footer>

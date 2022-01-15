@@ -22,6 +22,10 @@ font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
 
     text-decoration: none;
@@ -118,6 +122,10 @@ main {
     display: flex;
 }
 
+.menu li:hover a {
+    border-bottom: 2px solid var(--common-text-color);
+}
+
 /* banner-section */
 .banner-section {
     display: flex;
@@ -159,7 +167,6 @@ main {
     margin-top: 16px;
 
     border: 2px solid transparent;
-    transition: 1s;
 }
 
 .banner-button:hover {
@@ -207,6 +214,7 @@ main {
     justify-content: center;
     align-items: center;
     background-image: url(../images/Circle\ design.svg);
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
@@ -373,7 +381,7 @@ main {
     font-family: Inter;
     font-weight: bold;
     font-size: 14px;
-
+    line-height: 143%;
     color: #787885;
 }
 
@@ -383,14 +391,16 @@ main {
 
 }
 
+
+.seemore-button {
+    color: var(--button-color);
+    transition: 1s;
+}
+
 .seemore-button:hover {
     background-color: var(--button-color);
     color: #fff;
 
-}
-
-.seemore-button {
-    color: var(--button-color);
 }
 
 /* Subscribe section*/
@@ -400,7 +410,7 @@ main {
     margin-bottom: 100px;
 }
 
-.subscribe-form {
+.subscribe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -411,13 +421,13 @@ main {
     border-radius: 5px;
 }
 
-.subscribe-form .subscribe-form form {
+.subscribe-form {
     width: 80%;
     display: flex;
 
 }
 
-.subscribe-form .subscribe-title {
+.subscribe .subscribe-title {
 
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
@@ -441,7 +451,7 @@ main {
     font-family: Poppins;
     height: 50px;
     border: 1px solid rgb(182, 178, 178);
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
 }
 
 .subscribe-form input[type=button] {
@@ -450,7 +460,7 @@ main {
     height: 50px;
     background-color: #7C99AC;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     font-weight: 700;
     color: #fff
 }
@@ -498,9 +508,18 @@ main {
     border-radius: 50%;
     background-color: #23213C;
     margin: 0 8px;
+    transition: 0.5s;
+}
+
+.footer ul li:hover {
+    background-color: #fff;
 }
 
 .footer ul li a {
     font-size: 17px;
     color: #fff;
+}
+
+.footer ul li:hover a {
+    color: #23213C;
 }

@@ -1,4 +1,4 @@
-/* mobile  */
+/* For mobile  */
 @media only screen and (max-width:688px) {
 
     .header-part {
@@ -88,15 +88,20 @@
     .subscribe-form {
         width: 95%;
         padding: 50px 15px;
+        flex-direction: column;
+        gap: 10px
     }
 
+    .subscribe-form input[type=text] {
+        border-radius: 5px;
+    }
 
     .subscribe-form input[type=button] {
-        margin-top: 20px;
+        border-radius: 5px;
     }
 }
 
-/* for tab  */
+/* for tablate  */
 @media only screen and (min-width:688px) and (max-width:992px) {
 
     .navbar {
