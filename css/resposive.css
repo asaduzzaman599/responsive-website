@@ -18,7 +18,6 @@
     #toggle-button:checked~.menu .navigation {
 
         transform: translateY(100px);
-        top: 0;
     }
 
     .menu .navigation {
@@ -93,6 +92,7 @@
     }
 
     .subscribe-form input[type=text] {
+        padding: 10px 10px;
         border-radius: 5px;
     }
 
