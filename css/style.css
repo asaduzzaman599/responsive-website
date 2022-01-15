@@ -163,9 +163,41 @@ main {
 }
 
 .banner-button:hover {
+    animation: button-hover 10s ease 0s infinite forwards;
     border: 2px solid var(--button-color);
-    color: var(--button-color);
-    background-color: #fff;
+
+}
+
+@keyframes button-hover {
+    0% {
+        background-image: linear-gradient(45deg, var(--button-color), #fff, var(--button-color));
+        color: var(--button-color);
+    }
+
+    25% {
+
+        background-image: linear-gradient(45deg, #fff, var(--button-color), #fff);
+        color: #fff;
+    }
+
+    50% {
+        background-image: linear-gradient(45deg, var(--button-color), #fff, var(--button-color));
+        color: var(--button-color);
+    }
+
+    75% {
+
+        background-image: linear-gradient(45deg, #fff, var(--button-color));
+        color: #fff;
+    }
+
+
+    100% {
+
+        background-image: linear-gradient(45deg, #fff, var(--button-color));
+        color: #fff;
+    }
+
 }
 
 
@@ -272,6 +304,12 @@ main {
     border-radius: 5px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
+
+}
+
+.collection:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.302);
+
 }
 
 .collection-img img {
@@ -342,6 +380,12 @@ main {
 .collection-button {
     margin-top: 50px;
     text-align: right;
+
+}
+
+.seemore-button:hover {
+    background-color: var(--button-color);
+    color: #fff;
 
 }
 
